@@ -75,8 +75,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                     <span className="font-medium">Sign Out</span>
                   </button>
                 </div>
-              ) : (
-              
+              ) : (   
               )}
             </div>
           </div>
