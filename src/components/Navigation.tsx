@@ -61,13 +61,12 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
             <div className="pl-4 ml-4 border-l border-gray-200">
               {user ? (
                 <div className="flex items-center gap-3">
-                  {isAdmin && (
+                  ...
                     <div className="flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 rounded-lg">
                       <Shield className="w-4 h-4" />
                       <span className="text-sm font-medium">Admin</span>
                     </div>
-                  )}
-                  <button
+                    : null}                  <button
                     onClick={handleSignOut}
                     className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
                   >
