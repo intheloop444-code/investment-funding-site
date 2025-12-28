@@ -75,15 +75,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                     <span className="font-medium">Sign Out</span>
                   </button>
                 </div>
-              ) : (
-                <button
-                  onClick={() => onNavigate('login')}
-                  className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  <LogIn className="w-5 h-5" />
-                  <span className="font-medium">Admin Login</span>
-                </button>
-              )}
+              ) : null}
             </div>
           </div>
         </div>
